@@ -94,7 +94,7 @@ export default function Posts(){
             <ion-icon name="paper-plane-outline"></ion-icon>
           </div>
           <div>
-            <ion-icon data-test="salve-post" onClick={() => toggleMark()} name={isMarked ? "bookmark" : "bookmark-outline"}></ion-icon>
+            <ion-icon data-test="save-post" onClick={() => toggleMark()} name={isMarked ? "bookmark" : "bookmark-outline"}></ion-icon>
           </div>
         </div>
 
@@ -130,7 +130,7 @@ export default function Posts(){
             <ion-icon name="paper-plane-outline"></ion-icon>
           </div>
           <div>
-            <ion-icon data-test="salve-post" onClick={() => toggleMark2()} name={isMarked2 ? "bookmark" : "bookmark-outline"}></ion-icon>
+            <ion-icon data-test="save-post" onClick={() => toggleMark2()} name={isMarked2 ? "bookmark" : "bookmark-outline"}></ion-icon>
           </div>
         </div>
 
@@ -166,7 +166,7 @@ export default function Posts(){
             <ion-icon name="paper-plane-outline"></ion-icon>
           </div>
           <div>
-            <ion-icon data-test="salve-post" onClick={() => toggleMark3()} name={isMarked3 ? "bookmark" : "bookmark-outline"}></ion-icon>
+            <ion-icon data-test="save-post" onClick={() => toggleMark3()} name={isMarked3 ? "bookmark" : "bookmark-outline"}></ion-icon>
           </div>
         </div>
 
