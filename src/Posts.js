@@ -59,7 +59,7 @@ export default function Posts(){
 
     return (        
     <div class="posts">
-    <div className="post">
+    <div className="post" data-test="post">
       <div className="topo">
         <div className="usuario">
           <img src="assets/img/meowed.svg" alt="meowed"/>
@@ -71,31 +71,31 @@ export default function Posts(){
       </div>
 
       <div className="conteudo">
-        <img src="assets/img/gato-telefone.svg" alt="gato-telefone"/>
+        <img src="assets/img/gato-telefone.svg" data-test="post-image" alt="gato-telefone"/>
       </div>
 
       <div className="fundo">
         <div className="acoes">
           <div>
-            <ion-icon onClick={() => handleClick1()} name={isClicked1 ? "heart" : "heart-outline"} class={isClicked1 ? "red" : "black"} ></ion-icon>
+            <ion-icon data-test="like-post" onClick={() => handleClick1()} name={isClicked1 ? "heart" : "heart-outline"} class={isClicked1 ? "red" : "black"} ></ion-icon>
             <ion-icon name="chatbubble-outline"></ion-icon>
             <ion-icon name="paper-plane-outline"></ion-icon>
           </div>
           <div>
-            <ion-icon name="bookmark-outline"></ion-icon>
+            <ion-icon data-test="salve-post" name="bookmark-outline"></ion-icon>
           </div>
         </div>
 
         <div className="curtidas">
           <img src="assets/img/respondeai.svg" alt="respondeai"/>
-          <div className="texto">
+          <div className="texto" data-test="likes-number">
             Curtido por <strong>respondeai</strong> e <strong>outras {!isClicked1 ? likePost01 : likePost01+1} pessoas</strong>
           </div>
         </div>
       </div>
     </div>
 
-    <div className="post">
+    <div className="post" data-test="post">
       <div className="topo">
         <div className="usuario">
           <img src="assets/img/barked.svg" alt="barked"/>
@@ -107,31 +107,31 @@ export default function Posts(){
       </div>
 
       <div className="conteudo">
-        <img src="assets/img/dog.svg" alt="dog" />
+        <img src="assets/img/dog.svg" data-test="post-image" alt="dog" />
       </div>
 
       <div className="fundo">
         <div className="acoes">
           <div>
-            <ion-icon onClick={() => handleClick2()} name={isClicked2 ? "heart" : "heart-outline"} class={isClicked2 ? "red" : "black"}></ion-icon>
+            <ion-icon data-test="like-post" onClick={() => handleClick2()} name={isClicked2 ? "heart" : "heart-outline"} class={isClicked2 ? "red" : "black"}></ion-icon>
             <ion-icon name="chatbubble-outline"></ion-icon>
             <ion-icon name="paper-plane-outline"></ion-icon>
           </div>
           <div>
-            <ion-icon name="bookmark-outline"></ion-icon>
+            <ion-icon data-test="salve-post" name="bookmark-outline"></ion-icon>
           </div>
         </div>
 
         <div className="curtidas">
           <img src="assets/img/adorable_animals.svg" alt="adorable_animals"/>
-          <div className="texto">
+          <div className="texto" data-test="likes-number">
             Curtido por <strong>adorable_animals</strong> e <strong>outras {!isClicked2 ? likePost02 : likePost02+1} pessoas</strong>
           </div>
         </div>
       </div>
     </div>
 
-    <div className="post">
+    <div className="post" data-test="post">
       <div className="topo">
         <div className="usuario">
           <img src="assets/img/barked.svg" alt="barked"/>
@@ -143,24 +143,24 @@ export default function Posts(){
       </div>
 
       <div className="conteudo">
-        <img src="assets/img/dog.svg" alt="dog" />
+        <img src="assets/img/dog.svg" data-test="post-image" alt="dog" />
       </div>
 
       <div className="fundo">
         <div className="acoes">
           <div>
-            <ion-icon onClick={() => handleClick3()} name={isClicked3 ? "heart" : "heart-outline"} class={isClicked3 ? "red" : "black"}></ion-icon>
+            <ion-icon data-test="like-post" onClick={() => handleClick3()} name={isClicked3 ? "heart" : "heart-outline"} class={isClicked3 ? "red" : "black"}></ion-icon>
             <ion-icon name="chatbubble-outline"></ion-icon>
             <ion-icon name="paper-plane-outline"></ion-icon>
           </div>
           <div>
-            <ion-icon name="bookmark-outline"></ion-icon>
+            <ion-icon data-test="salve-post" name="bookmark-outline"></ion-icon>
           </div>
         </div>
 
         <div className="curtidas">
           <img src="assets/img/adorable_animals.svg" alt="adorable_animals"/>
-          <div className="texto">
+          <div className="texto" data-test="likes-number">
             Curtido por <strong>adorable_animals</strong> e <strong>outras {!isClicked3 ? likePost03 : likePost03+1} pessoas</strong>
           </div>
         </div>
