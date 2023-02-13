@@ -83,7 +83,7 @@ export default function Posts(){
       </div>
 
       <div className="conteudo">
-        <img src="assets/img/gato-telefone.svg" data-test="post-image" alt="gato-telefone"/>
+        <img src="assets/img/gato-telefone.svg" onClick={() => handleClick1()} name={isClicked1 ? "heart" : "heart-outline"} data-test="post-image" alt="gato-telefone"/>
       </div>
 
       <div className="fundo">
@@ -119,7 +119,7 @@ export default function Posts(){
       </div>
 
       <div className="conteudo">
-        <img src="assets/img/dog.svg" data-test="post-image" alt="dog" />
+        <img src="assets/img/dog.svg" data-test="post-image" onClick={() => handleClick2()} name={isClicked2 ? "heart" : "heart-outline"} alt="dog" />
       </div>
 
       <div className="fundo">
@@ -155,7 +155,7 @@ export default function Posts(){
       </div>
 
       <div className="conteudo">
-        <img src="assets/img/dog.svg" data-test="post-image" alt="dog" />
+        <img src="assets/img/dog.svg" data-test="post-image" onClick={() => handleClick3()} name={isClicked3 ? "heart" : "heart-outline"} alt="dog" />
       </div>
 
       <div className="fundo">
