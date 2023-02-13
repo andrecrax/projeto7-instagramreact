@@ -44,6 +44,9 @@ export default function Posts(){
     const [isClicked1, setIsClicked1] = useState(false);
     const [isClicked2, setIsClicked2] = useState(false);
     const [isClicked3, setIsClicked3] = useState(false);
+    const [isMarked, setIsMarked] = useState(false);
+    const [isMarked2, setIsMark2] = useState(false);
+    const [isMarked3, setIsMark3] = useState(false);
 
     function handleClick1() {
         setIsClicked1(!isClicked1);
@@ -55,6 +58,15 @@ export default function Posts(){
 
     function handleClick3() {
         setIsClicked3(!isClicked3);
+    }
+    function toggleMark() {
+      setIsMarked(!isMarked);
+    }
+    function toggleMark2() {
+    setIsMark2(!isMarked2);
+    }
+    function toggleMark3() {
+    setIsMark3(!isMarked3);
     }
 
     return (        
@@ -82,7 +94,7 @@ export default function Posts(){
             <ion-icon name="paper-plane-outline"></ion-icon>
           </div>
           <div>
-            <ion-icon data-test="salve-post" name="bookmark-outline"></ion-icon>
+            <ion-icon data-test="salve-post" onClick={() => toggleMark()} name={isMarked ? "bookmark" : "bookmark-outline"}></ion-icon>
           </div>
         </div>
 
@@ -118,7 +130,7 @@ export default function Posts(){
             <ion-icon name="paper-plane-outline"></ion-icon>
           </div>
           <div>
-            <ion-icon data-test="salve-post" name="bookmark-outline"></ion-icon>
+            <ion-icon data-test="salve-post" onClick={() => toggleMark2()} name={isMarked2 ? "bookmark" : "bookmark-outline"}></ion-icon>
           </div>
         </div>
 
@@ -154,7 +166,7 @@ export default function Posts(){
             <ion-icon name="paper-plane-outline"></ion-icon>
           </div>
           <div>
-            <ion-icon data-test="salve-post" name="bookmark-outline"></ion-icon>
+            <ion-icon data-test="salve-post" onClick={() => toggleMark3()} name={isMarked3 ? "bookmark" : "bookmark-outline"}></ion-icon>
           </div>
         </div>
 
