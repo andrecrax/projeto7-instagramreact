@@ -47,6 +47,28 @@ export default function Posts(){
     const [isMarked, setIsMarked] = useState(false);
     const [isMarked2, setIsMark2] = useState(false);
     const [isMarked3, setIsMark3] = useState(false);
+    const [clicked, setClicked] = useState(false);
+    const [clicked2, setClicked2] = useState(false);
+    const [clicked3, setClicked3] = useState(false);
+
+    function photoClick() {
+      if (!clicked) {
+        setClicked(true);
+        setIsClicked1(true);
+      }
+    }
+    function photoClick2() {
+      if (!clicked2) {
+        setClicked2(true);
+        setIsClicked2(true);
+      }
+    }
+    function photoClick3() {
+      if (!clicked3) {
+        setClicked3(true);
+        setIsClicked3(true);
+      }
+    }
 
     function handleClick1() {
         setIsClicked1(!isClicked1);
@@ -83,7 +105,7 @@ export default function Posts(){
       </div>
 
       <div className="conteudo">
-        <img src="assets/img/gato-telefone.svg" onClick={() => handleClick1()} name={isClicked1 ? "heart" : "heart-outline"} data-test="post-image" alt="gato-telefone"/>
+        <img src="assets/img/gato-telefone.svg" onClick={photoClick} data-test="post-image" alt="gato-telefone"/>
       </div>
 
       <div className="fundo">
@@ -119,7 +141,7 @@ export default function Posts(){
       </div>
 
       <div className="conteudo">
-        <img src="assets/img/dog.svg" data-test="post-image" onClick={() => handleClick2()} name={isClicked2 ? "heart" : "heart-outline"} alt="dog" />
+        <img src="assets/img/dog.svg" data-test="post-image" onClick={photoClick2} alt="dog" />
       </div>
 
       <div className="fundo">
@@ -155,7 +177,7 @@ export default function Posts(){
       </div>
 
       <div className="conteudo">
-        <img src="assets/img/dog.svg" data-test="post-image" onClick={() => handleClick3()} name={isClicked3 ? "heart" : "heart-outline"} alt="dog" />
+        <img src="assets/img/dog.svg" data-test="post-image" onClick={photoClick3} alt="dog" />
       </div>
 
       <div className="fundo">
